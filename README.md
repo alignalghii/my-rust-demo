@@ -1,6 +1,13 @@
 # Practice demos for Rust
 
-## Rreferences
+## Table of contents
+
+- [The concept of references](#the-concept-of-references)
+    - [Can references appear in constant declarations?](#can-references-appear-in-constant-declarations)
+    - [Mimicking references with functions returning ownership received in arguments](#mimicking-references-with-functions-returning-ownership-received-in-arguments)
+
+
+## The concept of references
 
 The concept *reference* has many faces in Rust. Although sometimes they are explained or modelled by pointers, but they have severals additional features, mostly in form of additional constraints, but sometimes properties not directyl modellable by a pointer.
 
