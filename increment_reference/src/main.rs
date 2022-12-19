@@ -1,6 +1,36 @@
+fn main() {
+    demo_for_integer();
+    demo_for_string();
+}
+
+// Demo for strings
+
+fn demo_for_string() {
+    let mut s = String::from("Hello");
+    let sref1 = &mut s; // The pointer itself is immutable, it is the referent access that is mutable
+    // let sref2 = &s;
+    println!("sref1: {sref1}");
+    sref1.push_str(" Mark"); // althought the pointer is immutable, value reload is allowed
+    println!("{}", sref1);
+    sref1.push_str(" coming");
+    println!("{}", sref1);
+
+    // let mut u = String::from("Hello");
+    // sref1 = &mut u; // reseating is not allowed, because the pointer itself is immutable (it is the referent access that is mutable)
+
+    let v = String::from("Hello"); // immutable val
+    let w = String::from("Bello"); // immutable val
+    let mut reseatable: &String = &v; // mutable i.e. reseatable pointer on (contentually) immutable String
+    println!("{reseatable}");
+    reseatable = &w;
+    println!("{reseatable}");
+}
+
+// Demo for integers
+
 const CONSTANT_FOUR: i32 = 4;
 
-fn main() {
+fn demo_for_integer() {
     let mut n: i32 = 5;
     print_val(n);
     print_ref(&n);
