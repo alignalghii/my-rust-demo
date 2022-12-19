@@ -31,6 +31,6 @@ fn inc_ref(nref: &mut i32) {
 
 fn print_reseated_ref(mut nref: &i32) {
     println!("{nref}");
-    nref = &CONSTANT_FOUR; // `nr = &4` works too;
+    nref = &CONSTANT_FOUR; // `nr = &4` works too, but `&local_variable` bumps into lifetime problems
     println!("{nref}");
 }
