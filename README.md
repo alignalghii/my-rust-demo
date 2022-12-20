@@ -6,6 +6,7 @@
     - [Can references appear in constant declarations?](#can-references-appear-in-constant-declarations)
     - [Mimicking references with functions returning ownership received in arguments](#mimicking-references-with-functions-returning-ownership-received-in-arguments)
     - [Mutable references](#mutable-references)
+    - [Method does not move its self object](method-does-not-move-its-self-object)
 
 
 ## The concept of references
@@ -40,3 +41,7 @@ Let us contrast the following two function declarations:
 It is the first one that is an important concept, and it is the second one that is an existing, but marginal and not too useful concept. They are easy to be mixed while a beginner is taking the learning curve, and that can hide the most important essence. The important conceptual difference between them is detailed in the [following sample code file](increment_reference/src/main.rs).
 
 The essence is the conceptual difference between pointer reseating versus contentual refilling.  In the pointer reseating sample, also note the use of a (global) constant: if we change that for a local variable, in most cases we run into interesting lifetime problems.
+
+### Method does not move its self object
+
+Method does not move its *self* object: it is not like a value argument, it is much more like a reference. See [sample source code](method_move/src/main.rs).
