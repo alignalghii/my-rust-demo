@@ -46,4 +46,4 @@ The essence is the conceptual difference between pointer reseating versus conten
 
 Method does not move its *self* object: it is not like a value argument, it is much more like a reference. See [sample source code](method_move/src/main.rs).
 
-There are more interesting samples about methods and their possible strategies toward mutability and movement: here are samples about a method moving ownership away from the self! Here are the more detailed and clarified furtherdeveloped [source code samples](method_moving_ownership_away_from_the_self/src/main.rs).
+There are more interesting samples about methods and their possible strategies toward mutability and movement: here are samples about a method moving ownership away from the self! Here are the more detailed and clarified furtherdeveloped [source code samples](method_moving_ownership_away_from_the_self/src/main.rs). It contains also samples about mutability of the self (of course not in the pointer reseating, but the content update sense).
