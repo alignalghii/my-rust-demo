@@ -6,7 +6,7 @@
     - [Can references appear in constant declarations?](#can-references-appear-in-constant-declarations)
     - [Mimicking references with functions returning ownership received in arguments](#mimicking-references-with-functions-returning-ownership-received-in-arguments)
     - [Mutable references](#mutable-references)
-    - [Method does not move its self object](method-does-not-move-its-self-object)
+    - [Method does not move its self object](#method-does-not-move-its-self-object)
 
 
 ## The concept of references
